@@ -21,7 +21,7 @@ COPY .  /app/
 EXPOSE 80
 
 ## health check command
-HEALTHCHECK --interval=12s --timeout=12s --start-period=30s \  
+HEALTHCHECK --interval=12s --timeout=12s --start-period=12s \  
     CMD node healthcheck.js
 
 ## executing web application - /app/server.js 
